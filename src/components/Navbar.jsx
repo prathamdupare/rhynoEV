@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { ChevronsDown, Github, Instagram, Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -24,37 +24,42 @@ import { useState } from "react";
 
 const routeList = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "/",
+    label: "Home",
   },
   {
-    href: "#team",
-    label: "Team",
+    href: "/about-us",
+    label: "About Us",
   },
   {
-    href: "#contact",
-    label: "Contact",
+    href: "/contact-us",
+    label: "Contact us",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "Pre-Book Now",
   },
 ];
 
-const featureList = [
+const vehicleList = [
   {
-    title: "Showcase Your Value",
+    title: "SE03 Lite",
     description: "Highlight how your product solves user problems.",
+    path: "se03",
   },
   {
-    title: "Build Trust",
+    title: "SE03",
     description:
       "Leverages social proof elements to establish trust and credibility.",
+
+    path: "se03-lite",
   },
   {
-    title: "Capture Leads",
+    title: "SE03 Max",
     description:
       "Make your lead capture form visually appealing and strategically.",
+
+    path: "se03-max",
   },
 ];
 
@@ -62,9 +67,9 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="my-3 bg-opacity-15 w-full  lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
+    <header className="my-3 backdrop-brightness-90 border   w-full shadow-md backdrop-blur-lg lg:max-w-screen-xl top-5 mx-auto sticky  z-40 rounded-2xl flex justify-between items-center p-2 ">
       <Link href="/" className="font-bold text-lg flex items-center">
-        FossPage
+        Rhyno EV
       </Link>
 
       {/* <!-- Mobile --> */}
@@ -118,30 +123,25 @@ export const Navbar = () => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-card text-base">
-              Features
+              Products
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
+              <div className=" w-[300px]">
                 <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
+                  {vehicleList.map(({ title, description, path }) => (
+                    <Link href={path} className="text-base px-2">
+                      <li
+                        key={title}
+                        className="rounded-md p-3 text-sm hover:bg-muted"
+                      >
+                        <p className="mb-1 font-semibold leading-none text-foreground">
+                          {title}
+                        </p>
+                        <p className="line-clamp-2 text-muted-foreground">
+                          {description}
+                        </p>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -168,6 +168,18 @@ export const Navbar = () => {
             target="_blank"
           >
             <Github className="size-5" />
+          </Link>
+        </Button>
+      </div>
+
+      <div className="hidden lg:flex">
+        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
+          <Link
+            href="https://github.com"
+            aria-label="View on GitHub"
+            target="_blank"
+          >
+            <Instagram className="size-5" />
           </Link>
         </Button>
       </div>
