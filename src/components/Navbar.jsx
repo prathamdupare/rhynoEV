@@ -67,7 +67,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="my-3 backdrop-brightness-90 border   w-full shadow-md backdrop-blur-lg lg:max-w-screen-xl top-5 mx-auto sticky  z-40 rounded-2xl flex justify-between items-center p-2 ">
+    <header className="my-3  border   w-full shadow-md backdrop-filter backdrop-blur-lg lg:max-w-screen-xl top-5 mx-auto sticky  z-40 rounded-2xl flex justify-between items-center p-2 ">
       <Link href="/" className="font-bold text-lg flex items-center">
         Rhyno EV
       </Link>
