@@ -1,6 +1,6 @@
 export default function Component() {
   return (
-    <div className="flex max-w-4xl mx-auto py-12 md:py-20">
+    <div className="flex max-w-4xl mx-auto mt-20 py-12 md:py-20">
       <div className=" space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Contact Us</h1>

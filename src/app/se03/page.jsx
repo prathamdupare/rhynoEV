@@ -49,7 +49,7 @@ export default function Component() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-center gap-4">
             <img
-              src="/next.svg"
+              src="/rhyno.png"
               alt="Rhyno SE03 Lite in Black"
               width={400}
               height={400}
@@ -61,7 +61,7 @@ export default function Component() {
           </div>
           <div className="flex flex-col items-center gap-4">
             <img
-              src="/vercel.svg"
+              src="/rhyno.png"
               alt="Rhyno SE03 Lite in White"
               width={400}
               height={400}
@@ -73,7 +73,7 @@ export default function Component() {
           </div>
           <div className="flex flex-col items-center gap-4">
             <img
-              src="/next.svg"
+              src="/rhyno.png"
               alt="Rhyno SE03 Lite in Red"
               width={400}
               height={400}

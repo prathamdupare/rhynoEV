@@ -175,7 +175,7 @@ export const Navbar = () => {
       <div className="hidden lg:flex">
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
-            href="https://github.com"
+            href="https://www.instagram.com/rhyno.in/"
             aria-label="View on GitHub"
             target="_blank"
           >
