@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Component() {
@@ -15,7 +16,7 @@ export default function Component() {
     {
       feature: "LFP Battery",
       description:
-        "Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries, renowned for their safety features—eliminating the risk of fire associated with other Lithium batteries. These batteries boast a broader temperature range, ideal for the diverse Indian climate. Our technology enhances Rhyno's longevity, complemented by an Active Balancing Smart Battery Management System (BMS) for extended life and reduced maintenance. Each battery undergoes rigorous waterproofing tests according to IP76 standards. Our technology ensures lasting durability.",
+        "Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries, renowned for their safety features—eliminating the risk of fire associated with other Lithium batteries. These batteries boast a broader temperature range, ideal for the diverse Indian climate. Our technology enhances Rhynos longevity, complemented by an Active Balancing Smart Battery Management System (BMS) for extended life and reduced maintenance. Each battery undergoes rigorous waterproofing tests according to IP76 standards. Our technology ensures lasting durability.",
     },
     {
       feature: "Wider tyres",
@@ -43,7 +44,7 @@ export default function Component() {
     <div className="flex min-h-[100dvh] flex-col">
       <main className="flex-1">
         <section className="h-[80dvh] w-full overflow-hidden">
-          <img
+          <Image
             src="/rhyno.png"
             alt="EV Bike"
             className="h-full w-full object-cover object-center"
@@ -54,10 +55,10 @@ export default function Component() {
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
           <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-4 text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Let's Elevate Your Ride Experience With Rhyno{" "}
+              Let us Elevate Your Ride Experience With Rhyno{" "}
             </h1>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              Where Superiority Meets Style."
+              Where Superiority Meets Style.
             </p>
             <Link
               href="#"
@@ -73,7 +74,7 @@ export default function Component() {
           <Carousel className="w-full h-full ">
             <CarouselContent>
               {usp.map((item) => (
-                <CarouselItem>
+                <CarouselItem key={item.feature}>
                   <Card className="h-[300px] flex">
                     <CardContent className="flex flex-col w-full gap-6 items-center justify-center p-6">
                       <div className="flex items-center gap-3">

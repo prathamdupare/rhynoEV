@@ -6,6 +6,7 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
+import Image from "next/image";
 
 export default function Component() {
   return (
@@ -42,17 +43,21 @@ export default function Component() {
               <TableRow className="border-b hover:bg-muted/40">
                 <TableCell className="px-4 py-3 font-medium"> </TableCell>
                 <TableCell className="px-4 py-3">
-                  <img
+                  <Image
                     src="/next.svg"
                     alt="Rhyno SE03 Lite"
                     className="mx-auto"
                   />
                 </TableCell>
                 <TableCell className="px-4 py-3">
-                  <img src="/vercel.svg" alt="Rhyno SE03" className="mx-auto" />
+                  <Image
+                    src="/vercel.svg"
+                    alt="Rhyno SE03"
+                    className="mx-auto"
+                  />
                 </TableCell>
                 <TableCell className="px-4 py-3">
-                  <img
+                  <Image
                     src="next.svg"
                     alt="Rhyno SE03 Max"
                     className="mx-auto"

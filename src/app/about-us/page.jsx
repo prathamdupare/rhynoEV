@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Component() {
   return (
@@ -18,7 +19,7 @@ export default function Component() {
                 <p className="text-muted-foreground">
                   Established in 2019 by an automotive engineer with a vision
                   for sustainable and robust mobility solutions, Rhyno EV is not
-                  just a company; it's a collective effort of a dynamic team of
+                  just a company; it is a collective effort of a dynamic team of
                   young individuals passionately driving innovation in the
                   electric vehicle industry. We believe in engineering solutions
                   that solve problems.
@@ -31,7 +32,7 @@ export default function Component() {
                 </div>
               </div>
               <div className="hidden md:block">
-                <img
+                <Image
                   src="/rhyno.png"
                   alt="Rhyno EV Scooter"
                   width={600}
@@ -47,7 +48,7 @@ export default function Component() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <img
+                <Image
                   src="/rhyno.png"
                   alt="Rhyno EV Scooter"
                   width={600}
@@ -64,8 +65,8 @@ export default function Component() {
                   Engineered for safety and durability
                 </p>
                 <p className="text-muted-foreground">
-                  With our first product, we've taken a bold step to create
-                  something more than just a vehicle; it's a unique experience
+                  With our first product, we have taken a bold step to create
+                  something more than just a vehicle; it is a unique experience
                   of elegance, comfort, and style, addressing the pitfalls of
                   conventional electric scooters. Our design prioritizes safety,
                   eliminating concerns of fires and ensuring a longer battery

@@ -105,7 +105,9 @@ export const Navbar = () => {
                     variant="ghost"
                     className="justify-start text-base"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link key={href} href={href}>
+                      {label}
+                    </Link>
                   </Button>
                 ))}
               </div>
@@ -129,7 +131,7 @@ export const Navbar = () => {
               <div className=" w-[300px]">
                 <ul className="flex flex-col gap-2">
                   {vehicleList.map(({ title, description, path }) => (
-                    <Link href={path} className="text-base px-2">
+                    <Link key={title} href={path} className="text-base px-2">
                       <li
                         key={title}
                         className="rounded-md p-3 text-sm hover:bg-muted"

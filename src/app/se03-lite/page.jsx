@@ -8,12 +8,13 @@ import {
   TableBody,
   TableCell,
 } from "@/components/ui/table";
+import Image from "next/image";
 
 export default function Component() {
   return (
     <div className="w-full">
       <section className="relative h-[500px] overflow-hidden">
-        <img
+        <Image
           src="/rhyno.png"
           alt="Rhyno SE03 Lite"
           width={1920}
@@ -48,7 +49,7 @@ export default function Component() {
       <section className="container mx-auto py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col items-center gap-4">
-            <img
+            <Image
               src="/rhyno.png"
               alt="Rhyno SE03 Lite in Black"
               width={400}
@@ -60,7 +61,7 @@ export default function Component() {
             </Button>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <img
+            <Image
               src="/rhyno.png"
               alt="Rhyno SE03 Lite in White"
               width={400}
@@ -72,7 +73,7 @@ export default function Component() {
             </Button>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <img
+            <Image
               src="/rhyno.png"
               alt="Rhyno SE03 Lite in Red"
               width={400}

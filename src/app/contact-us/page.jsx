@@ -36,7 +36,6 @@ export default function Component() {
             </div>
           </div>
           <div
-            className="rounnext.svg"
             width="600"
             height="400"
             alt="Location"
